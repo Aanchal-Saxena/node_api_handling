@@ -34,6 +34,7 @@ const getDataById = (req, res) => {
     const users = readData(filePath);
     const user = findUserById(users, req.params.id);
 
+   //if user with the id is not found or null 
     if (!user) {
       return res.status(404).send({ error: "User not found" });
     }

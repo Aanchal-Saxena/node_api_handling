@@ -3,10 +3,8 @@ const fs = require("fs");
 // ============ fucntion to read data from a users data file ============= //
 /**
  * @description Reads data from a specified Json file and parses it into a javascript object
- *
  * @param {string} filePath - The path to the Json file that contains the users data
  * @returns {Array} - Returns the parsed javascript data from the Json file
- *
  * @throws {Error} - Throws an error if the file cannot be read or the content cannot be parsed
  */
 function readData(filePath) {
@@ -23,10 +21,8 @@ function readData(filePath) {
   // ============== fuction to write data in users data file =============== //
   /**
  * @description Writes data to a specified Json file
- *
- * @param {string} path - The path to the Json file where the data will be written
+ * @param {string} filePath - The path to the Json file where the data will be written
  * @param {Object} data - The data to be written to the file
- *
  * @throws {Error} - Throws an error if the data cannot be written
  */
   function writeData(filePath, data) {
